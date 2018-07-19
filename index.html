@@ -1,0 +1,166 @@
+<html>
+
+  <head>
+    <title>Zane Koch | Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--for hover over picture boot strap-->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!--for font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!--for scrolling-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+    //sleep function to help typeWriter
+    function sleep(milliseconds) {
+      var start = new Date().getTime();
+      for (var i = 0; i < 1e7; i++) {
+        if ((new Date().getTime() - start) > milliseconds){
+          break;
+        }
+      }
+    }
+    //typewriter effect
+    var i = 0;
+    var txt = 'Hi, I\'m Zane';
+    var speed = 130;
+    function typeWriter() {
+      if (i==0){
+        sleep(400);
+      }
+      if (i < txt.length) {
+        document.getElementById("name").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+        if (i == 3){
+          sleep(1500);
+        }
+      }
+    }
+
+
+    </script>
+  </head>
+
+
+<body onload="typeWriter()">
+  <!-- parallax code start -->
+  <section class="section parallax parallax-1">
+    <!--nav bar-->
+    <div id="navbar">
+    <a href="#Me">Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#passions">Passions</a>
+    <a href="#contact">Contact</a>
+    <a id="fancyname">Zane|Hampton|Koch</a>
+    </div>
+    <div class="container">
+      <h1 id="name"></h1>
+    </div>
+  </section>
+  <a id="Me"></a>
+  <section class="section content">
+    <div class-"container">
+      <h2>Me</h2>
+      <ul>
+      <li><p>Welcome. I'm a sophmore studying computational and systems biology at the Unviersity of California Los Angeles.</p></li>
+      <li><p>I lived the first 18 years of my life in a mountain town in Arizona (think more colorado-y than cacti and desert).</p></li>
+      <li><p>Science was my biggest interest in school, probably thanks to my bio prof dad and forestry researcher mom.</p></li>
+      <li><p>Entering college I wanted to maximize my potential to make an impact through science and I believe this will be most effectively accomplished through a combination of life and computer science.</p></li>
+    </ul>
+    </div>
+  </section>
+  <section class="section parallax parallax-2">
+    <div class="container">
+      <a id="projects"></a>
+      <h1>PROJECTS</h1>
+    </div>
+  </section>
+  <section class="section content">
+    <div class-"container">
+      <h2>My work</h2>
+      <ul>
+      <li><p>Currently I am a data analyst at UCLA working in the Center for Cognitive Neuroscience for Dr. Pamela Douglas.</p></li>
+      <ul><li><p >Here my responsibilities include: writing bash scripts to extract useful information from fMRI images and managing data on the Hoffman computing cluster.</p></li></ul>
+      <li><p>Additionally, I am working on honing my mahcine learning skills through building projects such as a Youtube title analyzation algorithm among others (all found on my github below).</p></li>
+      <li><p>Previously I was a laboratory Assistant (June 2017-September 2017) at Northern Arizona University in a Biology lab studying drought.</p></li>
+      <ul><li ><p>I installed psychrometers and sap flow velocity measuring instruments, collected data from field instruments, and entered replicatable and intelligible data into Excell spreadsheets.</p></li></ul>
+    </div>
+  </section>
+  <section class="section parallax parallax-3">
+    <div class="container">
+      <a id="passions"></a>
+      <h1>PASSIONS</h1>
+    </div>
+  </section>
+  <section class="section content">
+    <div class-"container">
+      <h2>My interests<div class="container-fluid">
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project wow animated animated4 fadeInLeft">
+                  <div class="project-hover">
+                    <h3>IMPACT</h3>
+                      <hr />
+                      <p>Maybe it's egotistical,but above everything else I want to have a positive impact on as many people as possible.
+                         Currently I think the best way to do this is through combing computational techniques to expedite important research.
+                        I know it is cliche to aspire to things like this, but if not this, then what?</p>
+                  </div>
+                </div>
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project project-2 wow animated animated3 fadeInLeft">
+                  <div class="project-hover">
+                    <h3>PHOTOGRAPHY</h3>
+                      <hr />
+                      <p>This, and guitar, are my creative outlets when programming and science are overwhelming. I enjoy being able to share what I see in the world with others.</p>
+                  </div>
+                </div>
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project project-3 wow animated animated2 fadeInLeft">
+                  <div class="project-hover">
+                    <h3>ENVIRONMENT</h3>
+                      <hr />
+                      <p>Climate change is real. This is one of the top 3 issues that <i>every</i> great thinker of our generation has espoused as the greatest threat to human survival.
+                         I hope for my work to in some capacity further reduce greenhouse gas emissions and re-equilibrate our planet.</p>
+                  </div>
+                </div>
+              <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project project-4 wow animated fadeInLeft">
+                  <div class="project-hover">
+                    <h3>Entrepreneurship</h3>
+                      <hr />
+                      <p>As much as I am a branch off the STEM tree, I also have a entrepreneurial streak. I enjoy studying economics, advertising, and consumer psychology.
+                        The fleixbility and agency that having my own business could afford me (and stress too, I know) is very tantalizing.</p>
+                  </div>
+              </div>
+              <div class="clearfix"></div>
+            </div></h2>
+
+  </div>
+  </section>
+  <a id="contact"></a>
+  <section class="section content">
+    <div class-"container">
+      <h2>Contact</h2>
+      <a href="mailto:zanekoch@g.ucla.edu"><p>Email: zanekoch@g.ucla.edu</p></a>
+      <a href="https://www.facebook.com/profile.php?id=100001655983422" target="_blank"><p>Facebook</p></a>
+      <a href="https://www.linkedin.com/in/zane-koch-6a6ba3155/" target="_blank"><p>Woefully, but increasingly, active linkedIn</p></a>
+      <a href="https://github.com/zanekoch" target="_blank"><p>Github</p></a>
+    </div>
+  </section>
+
+<canvas></canvas>
+</body>
+
+</html>

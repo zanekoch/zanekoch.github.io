@@ -1,0 +1,216 @@
+/*for nav bar*/
+body {
+  margin: 0;
+}
+.header {
+  background-color: white;
+  padding: 0px;
+  text-align: center;
+}
+#navbar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+}
+#navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Nunito', serif;
+  color: #45a29e;
+}
+#navbar a:hover {
+  background-color: white;
+  color: black;
+}
+#navbar a.active {
+  background-color: white;
+}
+#fancyname {
+  float: right !important;
+}
+#navbar #fancyname:hover {
+  color: #45a29e;
+}
+
+
+/*for parallax*/
+.indent{
+  text-indent: 2em;
+}
+h2 {
+
+  text-transform: none;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+section.section:last-child {
+  margin-bottom: 0;
+}
+section.section h2 {
+  margin-top: 15px;
+  margin-bottom: 2px;
+  font-family: 'Nunito', serif;
+  font-size: 30px;
+  color: #45a29e;
+  font-weight: lighter;
+  padding-left: 8px;
+}
+section.section p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: lighter;
+  padding-left: 8px;
+  font-family: 'Nunito', serif;
+}
+section.section p:last-child {
+  margin-bottom: 15;
+}
+section.section.content {
+  padding:0;
+  color: black;
+}
+body {
+  background-color: white;
+}
+section.section.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+section.section.parallax h1 {
+  font-family: 'Nunito', serif;
+  color: white;
+  line-height: 600px;
+  text-align: center;
+}
+section.container h2 {
+  padding-bottom: 0;
+}
+#name {
+  font-size: 50;
+}
+section.section.parallax-1 {
+  background-image: url("../images/los_angeles.jpg");
+}
+section.section.parallax-2 {
+  background-image: url("../images/rainbow.jpg");
+}
+section.section.parallax-3 {
+  background-image: url("../images/sunset.jpg");
+}
+@media all and (min-width: 600px) {
+    section.section h2 {
+      font-size: 42px;
+    }
+    section.section p {
+      font-size: 20px;
+    }
+    section.section.parallax h1 {
+      font-size: 96px;
+    }
+}
+@media all and (min-width: 960px) {
+  section.section.parallax h1 {
+    font-size: 160px;
+  }
+}
+
+/*bootstrap hover thing*/
+.container-fluid {
+  padding-top: 10px !important;
+  display: block;
+}
+h3 {
+  text-transform: none;
+  font-size: 19px !important;
+  color:#45a29e !important;
+  justify-content: center !important;
+}
+.title-arch {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 15px !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.project {
+width: 100%;
+height: 500px;
+background-image: url('../images/impact.jpg');
+background-size: cover;
+background-position: center;
+padding: 0 !important;
+float: left;
+}
+
+.project-2 {
+background-image: url("../images/camera.jpg");
+}
+
+.project-3 {
+background-image: url('../images/environment.jpg');
+}
+
+.project-4 {
+  background-image: url("../images/suit.jpg");
+}
+
+.project-hover {
+width: 100%;
+height: 100%;
+color: #fff;
+opacity: 0;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+background-color: rgba(128, 128, 128, 0.6);
+padding: 40% 30px !important;
+}
+
+.project-hover hr {
+height: 30px;
+width: 0;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+background-color: rgba(255, 255, 255, 1);
+border: 0;
+}
+
+.project-hover a {
+color: rgba(255, 255, 255, 1);
+padding: 2px 22px;
+line-height: 40px;
+border: 2px solid rgba(255, 255, 255, 1);
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+
+.project-hover a:hover {
+border-color: rgba(51, 51, 51, 1);
+color: rgba(51, 51, 51, 1);
+background-color: #FFF;
+}
+
+.project:hover .project-hover {
+opacity: 1;
+}
+
+.project:hover .project-hover hr {
+width: 100%;
+height: 5px;
+}
