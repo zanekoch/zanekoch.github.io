@@ -101,13 +101,13 @@ section.container h2 {
   font-size: 50;
 }
 section.section.parallax-1 {
-  background-image: url("../images/los_angeles.jpg");
+  background-image: url("../images/los_angeles-min.jpg");
 }
 section.section.parallax-2 {
-  background-image: url("../images/peaks.jpg");
+  background-image: url("../images/peaks-min.jpg");
 }
 section.section.parallax-3 {
-  background-image: url("../images/rainbow.jpg");
+  background-image: url("../images/rainbow-min.jpg");
 }
 section.section.parallax-4 {
   background-image: url("../images/puzzle.jpg");
@@ -183,7 +183,7 @@ h4{
 .project {
 width: 100%;
 height: 500px;
-background-image: url('../images/impact.jpg');
+background-image: url('../images/impact-min.jpg');
 background-size: cover;
 background-position: center;
 padding: 0 !important;
@@ -191,15 +191,15 @@ float: left;
 }
 
 .project-2 {
-background-image: url("../images/camera.jpg");
+background-image: url("../images/camera-min.jpg");
 }
 
 .project-3 {
-background-image: url('../images/environment.jpg');
+background-image: url('../images/environment-min.jpg');
 }
 
 .project-4 {
-  background-image: url("../images/suit.jpg");
+  background-image: url("../images/suit-min.jpg");
 }
 
 .project-hover {
